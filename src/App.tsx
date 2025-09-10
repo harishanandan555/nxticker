@@ -8,6 +8,9 @@ import ResetPasswordPage from './pages/ResetPasswordPage';
 import TwoFactorAuthPage from './pages/TwoFactorAuthPage';
 import Dashboard from './pages/Dashboard';
 import DocumentationPage from './pages/DocumentationPageWorking';
+import TermsOfServicePage from './pages/TermsOfServicePage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import SecurityPage from './pages/SecurityPage';
 import NotFoundPage from './pages/NotFoundPage';
 import { AuthProvider } from './context/AuthContext';
 
@@ -26,6 +29,9 @@ function App() {
             <Route path="/2fa" element={<TwoFactorAuthPage />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/documentation" element={<DocumentationPage />} />
+            <Route path="/terms" element={<TermsOfServicePage />} />
+            <Route path="/privacy" element={<PrivacyPolicyPage />} />
+            <Route path="/security" element={<SecurityPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </div>

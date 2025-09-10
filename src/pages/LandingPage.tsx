@@ -428,9 +428,9 @@ const LandingPage: React.FC = () => {
               © 2025 NxTicker. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-slate-400 hover:text-cyan-400 text-sm transition-colors duration-200">Privacy Policy</a>
-              <a href="#" className="text-slate-400 hover:text-cyan-400 text-sm transition-colors duration-200">Terms of Service</a>
-              <a href="#" className="text-slate-400 hover:text-cyan-400 text-sm transition-colors duration-200">Security</a>
+              <Link to="/privacy" className="text-slate-400 hover:text-cyan-400 text-sm transition-colors duration-200">Privacy Policy</Link>
+                <Link to="/terms" className="text-slate-400 hover:text-cyan-400 text-sm transition-colors duration-200">Terms of Service</Link>
+              <Link to="/security" className="text-slate-400 hover:text-cyan-400 text-sm transition-colors duration-200">Security</Link>
             </div>
           </div>
         </div>
