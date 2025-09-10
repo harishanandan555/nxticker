@@ -472,7 +472,7 @@ const PricingPage: React.FC = () => {
                 role: 'Lead Developer',
                 company: 'FinTech Startup',
                 avatar: 'SC',
-                testimonial: 'BetaTickers has been a game-changer for our trading platform. The real-time data is incredibly reliable and the documentation is excellent.',
+                testimonial: 'NxTicker has been a game-changer for our trading platform. The real-time data is incredibly reliable and the documentation is excellent.',
                 rating: 5
               },
               {
@@ -480,7 +480,7 @@ const PricingPage: React.FC = () => {
                 role: 'CTO',
                 company: 'Investment Firm',
                 avatar: 'MR',
-                testimonial: 'We switched from multiple data providers to BetaTickers and reduced our costs by 60% while improving data quality.',
+                testimonial: 'We switched from multiple data providers to NxTicker and reduced our costs by 60% while improving data quality.',
                 rating: 5
               },
               {

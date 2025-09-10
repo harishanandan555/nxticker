@@ -1,7 +1,7 @@
 # Complete Application Features
 
 ## 🚀 Overview
-This document provides a comprehensive overview of all features implemented in the BetaTickers application, including the complete login flow, dashboard, pricing page, and additional features.
+This document provides a comprehensive overview of all features implemented in the NxTicker application, including the complete login flow, dashboard, pricing page, and additional features.
 
 ## 📱 Complete Application Structure
 

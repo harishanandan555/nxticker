@@ -84,7 +84,7 @@ const SignupPage: React.FC = () => {
                 <TrendingUp className="h-8 w-8 text-white" />
               </div>
             </div>
-                            <span className="text-3xl font-bold text-white">BetaTickers</span>
+                            <span className="text-3xl font-bold text-white">NxTicker</span>
           </Link>
           
           <h2 className="text-4xl font-bold text-white mb-4">
@@ -109,7 +109,7 @@ const SignupPage: React.FC = () => {
       {/* Benefits Section */}
       <div className="relative mt-8 sm:mx-auto sm:w-full sm:max-w-4xl mb-8">
         <div className={`bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 shadow-2xl ${isVisible ? 'slide-up stagger-1' : ''}`}>
-          <h3 className="text-2xl font-bold text-white mb-8 text-center">Why Choose BetaTickers?</h3>
+          <h3 className="text-2xl font-bold text-white mb-8 text-center">Why Choose NxTicker?</h3>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="text-center group">

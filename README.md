@@ -1,7 +1,7 @@
-# BetaTickers - Financial Data API Platform
+# NxTicker - Financial Data API Platform
 
 ## 🚀 Overview
-BetaTickers is a comprehensive financial data API platform designed for developers, traders, and enterprises. This application provides real-time and historical market data with enterprise-grade security, performance, and developer experience.
+NxTicker is a comprehensive financial data API platform designed for developers, traders, and enterprises. This application provides real-time and historical market data with enterprise-grade security, performance, and developer experience.
 
 ## 📚 Documentation
 
@@ -10,7 +10,7 @@ BetaTickers is a comprehensive financial data API platform designed for develope
 - **[Login Flow Features](./LOGIN_FLOW_FEATURES.md)** - Detailed documentation of the authentication system
 - **[Dashboard Features](./DASHBOARD_FEATURES.md)** - Complete dashboard functionality and features
 - **[Documentation Features](./DOCUMENTATION_FEATURES.md)** - Enhanced documentation system with interactive tools
-- **[Branding Update](./BRANDING_UPDATE.md)** - Complete rebranding from MarketDataAPI to BetaTickers
+- **[Branding Update](./BRANDING_UPDATE.md)** - Complete rebranding from MarketDataAPI to NxTicker
 
 ### **Application Structure**
 ```
@@ -192,8 +192,8 @@ npm run build
 ### **Environment Variables**
 Create a `.env` file with:
 ```
-VITE_API_URL=https://api.betatickers.com
-VITE_APP_NAME=BetaTickers
+VITE_API_URL=https://api.nxticker.com
+VITE_APP_NAME=NxTicker
 ```
 
 ## 📄 License
@@ -207,4 +207,4 @@ For support and questions:
 
 ---
 
-**BetaTickers** - Professional financial data infrastructure for developers, traders, and enterprises.
+**NxTicker** - Professional financial data infrastructure for developers, traders, and enterprises.

@@ -1,13 +1,13 @@
-# BetaTickers API Documentation
+# NxTicker API Documentation
 
 ## 🚀 Overview
 
-BetaTickers is a comprehensive financial data API platform that provides real-time and historical market data for stocks, forex, cryptocurrencies, and more. This documentation covers all available API endpoints, authentication methods, and usage examples.
+NxTicker is a comprehensive financial data API platform that provides real-time and historical market data for stocks, forex, cryptocurrencies, and more. This documentation covers all available API endpoints, authentication methods, and usage examples.
 
 ## 🔗 Base URL
 
 ```
-https://api.betatickers.com/v1
+https://api.nxticker.com/v1
 ```
 
 ## 🔐 Authentication
@@ -20,7 +20,7 @@ Authorization: Bearer YOUR_API_KEY
 
 ### Getting Your API Key
 
-1. Sign up at [BetaTickers](https://betatickers.com/signup)
+1. Sign up at [NxTicker](https://nxticker.com/signup)
 2. Navigate to your Dashboard
 3. Go to the "API Keys" tab
 4. Generate a new API key
@@ -52,7 +52,7 @@ Get real-time or latest quote for a symbol with comprehensive market data.
 **Example Request:**
 ```bash
 curl -H "Authorization: Bearer YOUR_API_KEY" \
-  "https://api.betatickers.com/v1/quote?symbol=AAPL&extended=true"
+  "https://api.nxticker.com/v1/quote?symbol=AAPL&extended=true"
 ```
 
 **Example Response:**
@@ -92,7 +92,7 @@ Get intraday price data for a symbol with customizable intervals.
 **Example Request:**
 ```bash
 curl -H "Authorization: Bearer YOUR_API_KEY" \
-  "https://api.betatickers.com/v1/intraday?symbol=TSLA&interval=5m&range=1d"
+  "https://api.nxticker.com/v1/intraday?symbol=TSLA&interval=5m&range=1d"
 ```
 
 **Example Response:**
@@ -129,7 +129,7 @@ Get fundamental data for a company including financial metrics and ratios.
 **Example Request:**
 ```bash
 curl -H "Authorization: Bearer YOUR_API_KEY" \
-  "https://api.betatickers.com/v1/fundamentals?symbol=MSFT"
+  "https://api.nxticker.com/v1/fundamentals?symbol=MSFT"
 ```
 
 **Example Response:**
@@ -166,7 +166,7 @@ Get real-time forex exchange rates.
 **Example Request:**
 ```bash
 curl -H "Authorization: Bearer YOUR_API_KEY" \
-  "https://api.betatickers.com/v1/fx/quote?pair=EUR/USD"
+  "https://api.nxticker.com/v1/fx/quote?pair=EUR/USD"
 ```
 
 **Example Response:**
@@ -200,7 +200,7 @@ Get cryptocurrency OHLCV (Open, High, Low, Close, Volume) data.
 **Example Request:**
 ```bash
 curl -H "Authorization: Bearer YOUR_API_KEY" \
-  "https://api.betatickers.com/v1/crypto/ohlcv?symbol=BTC/USD&interval=1h&limit=24"
+  "https://api.nxticker.com/v1/crypto/ohlcv?symbol=BTC/USD&interval=1h&limit=24"
 ```
 
 **Example Response:**
@@ -239,7 +239,7 @@ Get latest market news and financial headlines.
 **Example Request:**
 ```bash
 curl -H "Authorization: Bearer YOUR_API_KEY" \
-  "https://api.betatickers.com/v1/news?category=market&limit=10"
+  "https://api.nxticker.com/v1/news?category=market&limit=10"
 ```
 
 **Example Response:**
@@ -296,7 +296,7 @@ curl -X POST \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"filters":{"marketCap":{"min":1000000000},"sector":["Technology"]},"limit":20}' \
-  "https://api.betatickers.com/v1/screener"
+  "https://api.nxticker.com/v1/screener"
 ```
 
 **Example Response:**
@@ -339,7 +339,7 @@ Authenticate user and get access token.
 curl -X POST \
   -H "Content-Type: application/json" \
   -d '{"email":"user@example.com","password":"password123"}' \
-  "https://api.betatickers.com/v1/auth/login"
+  "https://api.nxticker.com/v1/auth/login"
 ```
 
 **Example Response:**
@@ -426,7 +426,7 @@ Get current user profile information.
 **Example Request:**
 ```bash
 curl -H "Authorization: Bearer YOUR_API_KEY" \
-  "https://api.betatickers.com/v1/user/profile"
+  "https://api.nxticker.com/v1/user/profile"
 ```
 
 **Example Response:**
@@ -521,7 +521,7 @@ Get API usage analytics and statistics.
 **Example Request:**
 ```bash
 curl -H "Authorization: Bearer YOUR_API_KEY" \
-  "https://api.betatickers.com/v1/analytics/usage?period=30d"
+  "https://api.nxticker.com/v1/analytics/usage?period=30d"
 ```
 
 **Example Response:**
@@ -590,7 +590,7 @@ Get billing history and invoices.
       "amount": 29.99,
       "currency": "USD",
       "status": "paid",
-      "downloadUrl": "https://api.betatickers.com/v1/billing/invoices/inv_123/download"
+      "downloadUrl": "https://api.nxticker.com/v1/billing/invoices/inv_123/download"
     }
   ]
 }
@@ -630,9 +630,9 @@ All errors follow a consistent format:
 ### Python SDK
 
 ```python
-pip install betatickers
+pip install nxticker
 
-from betatickers import Client
+from nxticker import Client
 
 client = Client("YOUR_API_KEY")
 
@@ -652,11 +652,11 @@ print(f"P/E Ratio: {fundamentals.pe_ratio}")
 ### JavaScript SDK
 
 ```javascript
-npm install betatickers
+npm install nxticker
 
-import { BetaTickers } from 'betatickers';
+import { NxTicker } from 'nxticker';
 
-const client = new BetaTickers('YOUR_API_KEY');
+const client = new NxTicker('YOUR_API_KEY');
 
 // Get real-time quote
 const quote = await client.quote('AAPL', { extended: true });
@@ -679,29 +679,29 @@ console.log(`P/E Ratio: ${fundamentals.peRatio}`);
 ```bash
 # Get quote
 curl -H "Authorization: Bearer YOUR_API_KEY" \
-  "https://api.betatickers.com/v1/quote?symbol=AAPL&extended=true"
+  "https://api.nxticker.com/v1/quote?symbol=AAPL&extended=true"
 
 # Get intraday data
 curl -H "Authorization: Bearer YOUR_API_KEY" \
-  "https://api.betatickers.com/v1/intraday?symbol=TSLA&interval=5m&range=1d"
+  "https://api.nxticker.com/v1/intraday?symbol=TSLA&interval=5m&range=1d"
 
 # Get fundamentals
 curl -H "Authorization: Bearer YOUR_API_KEY" \
-  "https://api.betatickers.com/v1/fundamentals?symbol=MSFT"
+  "https://api.nxticker.com/v1/fundamentals?symbol=MSFT"
 
 # Screen stocks
 curl -X POST \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"filters":{"marketCap":{"min":1000000000},"sector":["Technology"]},"limit":20}' \
-  "https://api.betatickers.com/v1/screener"
+  "https://api.nxticker.com/v1/screener"
 ```
 
 ## 🔄 Webhooks
 
 ### Webhook Events
 
-BetaTickers supports webhooks for real-time notifications:
+NxTicker supports webhooks for real-time notifications:
 
 - `quote.updated` - Real-time price updates
 - `news.published` - New market news
@@ -712,7 +712,7 @@ BetaTickers supports webhooks for real-time notifications:
 
 ```json
 {
-  "url": "https://your-app.com/webhooks/betatickers",
+  "url": "https://your-app.com/webhooks/nxticker",
   "events": ["quote.updated", "news.published"],
   "secret": "webhook_secret_key"
 }
@@ -758,10 +758,10 @@ All API communication must use HTTPS. HTTP requests will be rejected.
 - **Code Examples**: Copy-paste ready examples
 
 ### Contact
-- **Email**: support@betatickers.com
+- **Email**: support@nxticker.com
 - **Documentation**: Visit `/documentation` in the application
 - **Status Page**: Check system status and uptime
 
 ---
 
-**BetaTickers API** - Professional financial data infrastructure for developers, traders, and enterprises.
+**NxTicker API** - Professional financial data infrastructure for developers, traders, and enterprises.

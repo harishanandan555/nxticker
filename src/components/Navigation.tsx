@@ -41,7 +41,7 @@ const Navigation: React.FC = () => {
                 </div>
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">
-                BetaTickers
+                NxTicker
               </span>
             </Link>
           </div>

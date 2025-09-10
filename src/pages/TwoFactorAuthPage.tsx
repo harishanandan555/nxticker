@@ -139,7 +139,7 @@ const TwoFactorAuthPage: React.FC = () => {
                 <TrendingUp className="h-8 w-8 text-white" />
               </div>
             </div>
-                            <span className="text-3xl font-bold text-white">BetaTickers</span>
+                            <span className="text-3xl font-bold text-white">NxTicker</span>
           </Link>
           
           <div className="mx-auto flex items-center justify-center h-20 w-20 rounded-full bg-cyan-500/20 mb-6">

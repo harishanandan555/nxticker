@@ -30,7 +30,7 @@ const DocumentationPage: React.FC = () => {
       ],
       example: {
         request: `curl -H "Authorization: Bearer YOUR_API_KEY" \\
-  "https://api.betatickers.com/v1/quote?symbol=AAPL&extended=true"`,
+  "https://api.nxticker.com/v1/quote?symbol=AAPL&extended=true"`,
         response: `{
   "symbol": "AAPL",
   "price": 185.64,
@@ -72,9 +72,9 @@ const DocumentationPage: React.FC = () => {
   const sdkExamples = [
     {
       language: 'Python',
-      code: `pip install betatickers
+      code: `pip install nxticker
 
-from betatickers import Client
+from nxticker import Client
 
 client = Client("YOUR_API_KEY")
 quote = client.get_quote("AAPL", extended=True)
@@ -82,11 +82,11 @@ print(f"Price: ${quote.price}, Change: {quote.change_percent}%")`
     },
     {
       language: 'JavaScript',
-      code: `npm install betatickers
+      code: `npm install nxticker
 
-import { BetaTickers } from 'betatickers';
+import { NxTicker } from 'nxticker';
 
-const client = new BetaTickers('YOUR_API_KEY');
+const client = new NxTicker('YOUR_API_KEY');
 const quote = await client.quote('AAPL', { extended: true });
 console.log(\`Price: $\${quote.price}, Change: \${quote.changePercent}%\`);`
     },
@@ -94,7 +94,7 @@ console.log(\`Price: $\${quote.price}, Change: \${quote.changePercent}%\`);`
       language: 'cURL',
       code: `curl -H "Authorization: Bearer YOUR_API_KEY" \\
   -H "Content-Type: application/json" \\
-  "https://api.betatickers.com/v1/quote?symbol=AAPL&extended=true"`
+  "https://api.nxticker.com/v1/quote?symbol=AAPL&extended=true"`
     }
   ];
 

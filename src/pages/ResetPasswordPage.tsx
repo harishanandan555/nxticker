@@ -163,7 +163,7 @@ const ResetPasswordPage: React.FC = () => {
                 <TrendingUp className="h-8 w-8 text-white" />
               </div>
             </div>
-                            <span className="text-3xl font-bold text-white">BetaTickers</span>
+                            <span className="text-3xl font-bold text-white">NxTicker</span>
           </Link>
           
           <h2 className="text-4xl font-bold text-white mb-4">

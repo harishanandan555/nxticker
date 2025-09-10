@@ -73,7 +73,7 @@ const LandingPage: React.FC = () => {
 
   const testimonials = [
     {
-      quote: "BetaTickers transformed our trading platform. The reliability and speed are unmatched.",
+      quote: "NxTicker transformed our trading platform. The reliability and speed are unmatched.",
       author: "Sarah Chen",
       role: "CTO, FinTech Startup",
       avatar: "SC"
@@ -268,7 +268,7 @@ const LandingPage: React.FC = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
               Why Choose
               <span className="block bg-gradient-to-r from-cyan-500 to-blue-600 bg-clip-text text-transparent">
-                BetaTickers?
+                NxTicker?
               </span>
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
@@ -299,7 +299,7 @@ const LandingPage: React.FC = () => {
                   <div className="bg-gradient-to-r from-cyan-500 to-blue-600 p-3 rounded-xl">
                     <TrendingUp className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-3xl font-bold text-slate-900">BetaTickers</h3>
+                  <h3 className="text-3xl font-bold text-slate-900">NxTicker</h3>
                 </div>
                 
                 <div className="space-y-4">
@@ -386,7 +386,7 @@ const LandingPage: React.FC = () => {
                 <div className="bg-gradient-to-r from-cyan-500 to-blue-600 p-2 rounded-lg">
                   <TrendingUp className="h-8 w-8 text-white" />
                 </div>
-                <span className="text-2xl font-bold text-white">BetaTickers</span>
+                <span className="text-2xl font-bold text-white">NxTicker</span>
               </div>
               <p className="text-slate-400 max-w-md leading-relaxed mb-6">
                 Professional market data infrastructure for developers, traders, and enterprises. 
@@ -425,7 +425,7 @@ const LandingPage: React.FC = () => {
           
           <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-slate-400 text-sm">
-              © 2025 BetaTickers. All rights reserved.
+              © 2025 NxTicker. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-slate-400 hover:text-cyan-400 text-sm transition-colors duration-200">Privacy Policy</a>

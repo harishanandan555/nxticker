@@ -1,7 +1,7 @@
 # Complete Dashboard Features
 
 ## 🚀 Overview
-This document outlines all the comprehensive features implemented in the BetaTickers dashboard, providing a modern, feature-rich, and user-friendly interface for managing API usage, analytics, and account settings.
+This document outlines all the comprehensive features implemented in the NxTicker dashboard, providing a modern, feature-rich, and user-friendly interface for managing API usage, analytics, and account settings.
 
 ## 📊 Dashboard Tabs & Features
 

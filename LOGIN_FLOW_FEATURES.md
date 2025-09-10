@@ -1,7 +1,7 @@
 # Complete Login Flow Features
 
 ## 🚀 Overview
-This document outlines all the comprehensive features implemented in the BetaTickers login flow, providing a modern, secure, and user-friendly authentication experience.
+This document outlines all the comprehensive features implemented in the NxTicker login flow, providing a modern, secure, and user-friendly authentication experience.
 
 ## 📱 Pages & Routes
 
