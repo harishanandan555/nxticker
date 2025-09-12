@@ -34,15 +34,16 @@ const Navigation: React.FC = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-3 group">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="relative bg-gradient-to-r from-cyan-500 to-blue-600 p-2 rounded-lg">
-                  <TrendingUp className="h-6 w-6 text-white" />
-                </div>
-              </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">
-                NxTicker
-              </span>
+              <img 
+                src="/nxticker-icon.png" 
+                alt="NXTicker Icon" 
+                className="h-10 w-10 transition-transform duration-300 group-hover:scale-110"
+              />
+              <img 
+                src="/nxticker-logo.png" 
+                alt="NXTicker" 
+                className="h-10 transition-transform duration-300 group-hover:scale-105"
+              />
             </Link>
           </div>
 

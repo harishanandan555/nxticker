@@ -115,7 +115,18 @@ const ForgotPasswordPage: React.FC = () => {
                 <TrendingUp className="h-8 w-8 text-white" />
               </div>
             </div>
-                            <span className="text-3xl font-bold text-white">NxTicker</span>
+                            <div className="flex items-center space-x-3">
+                  <img 
+                    src="/nxticker-icon.png" 
+                    alt="NXTicker Icon" 
+                    className="h-12 w-12"
+                  />
+                  <img 
+                    src="/nxticker-logo.png" 
+                    alt="NXTicker" 
+                    className="h-12"
+                  />
+                </div>
           </Link>
           
           <h2 className="text-4xl font-bold text-white mb-4">

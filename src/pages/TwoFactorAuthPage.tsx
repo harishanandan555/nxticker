@@ -139,7 +139,18 @@ const TwoFactorAuthPage: React.FC = () => {
                 <TrendingUp className="h-8 w-8 text-white" />
               </div>
             </div>
-                            <span className="text-3xl font-bold text-white">NxTicker</span>
+                            <div className="flex items-center space-x-3">
+                  <img 
+                    src="/nxticker-icon.png" 
+                    alt="NXTicker Icon" 
+                    className="h-12 w-12"
+                  />
+                  <img 
+                    src="/nxticker-logo.png" 
+                    alt="NXTicker" 
+                    className="h-12"
+                  />
+                </div>
           </Link>
           
           <div className="mx-auto flex items-center justify-center h-20 w-20 rounded-full bg-cyan-500/20 mb-6">

@@ -13,7 +13,18 @@ const TermsOfServicePage = () => {
                 <div className="relative bg-gradient-to-r from-cyan-500 to-blue-600 p-2 rounded-lg">
                   <FileText className="h-6 w-6 text-white" />
                 </div>
-                <span className="text-2xl font-bold text-slate-900">NXTicker</span>
+                <div className="flex items-center space-x-3">
+                  <img 
+                    src="/nxticker-icon.png" 
+                    alt="NXTicker Icon" 
+                    className="h-10 w-10"
+                  />
+                  <img 
+                    src="/nxticker-logo.png" 
+                    alt="NXTicker" 
+                    className="h-10"
+                  />
+                </div>
               </Link>
             </div>
             <Link

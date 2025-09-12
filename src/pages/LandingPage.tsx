@@ -299,7 +299,18 @@ const LandingPage: React.FC = () => {
                   <div className="bg-gradient-to-r from-cyan-500 to-blue-600 p-3 rounded-xl">
                     <TrendingUp className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-3xl font-bold text-slate-900">NxTicker</h3>
+                  <div className="flex items-center space-x-3">
+                  <img 
+                    src="/nxticker-icon.png" 
+                    alt="NXTicker Icon" 
+                    className="h-12 w-12"
+                  />
+                  <img 
+                    src="/nxticker-logo.png" 
+                    alt="NXTicker" 
+                    className="h-12"
+                  />
+                </div>
                 </div>
                 
                 <div className="space-y-4">
@@ -386,7 +397,18 @@ const LandingPage: React.FC = () => {
                 <div className="bg-gradient-to-r from-cyan-500 to-blue-600 p-2 rounded-lg">
                   <TrendingUp className="h-8 w-8 text-white" />
                 </div>
-                <span className="text-2xl font-bold text-white">NxTicker</span>
+                <div className="flex items-center space-x-3">
+                  <img 
+                    src="/nxticker-icon.png" 
+                    alt="NXTicker Icon" 
+                    className="h-10 w-10"
+                  />
+                  <img 
+                    src="/nxticker-logo.png" 
+                    alt="NXTicker" 
+                    className="h-10"
+                  />
+                </div>
               </div>
               <p className="text-slate-400 max-w-md leading-relaxed mb-6">
                 Professional market data infrastructure for developers, traders, and enterprises. 
