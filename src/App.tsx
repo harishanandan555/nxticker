@@ -11,6 +11,7 @@ import DocumentationPage from './pages/DocumentationPageWorking';
 import TermsOfServicePage from './pages/TermsOfServicePage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import SecurityPage from './pages/SecurityPage';
+import CancellationRefundPolicyPage from './pages/CancellationRefundPolicyPage';
 import NotFoundPage from './pages/NotFoundPage';
 import { AuthProvider } from './context/AuthContext';
 
@@ -32,6 +33,7 @@ function App() {
             <Route path="/terms" element={<TermsOfServicePage />} />
             <Route path="/privacy" element={<PrivacyPolicyPage />} />
             <Route path="/security" element={<SecurityPage />} />
+            <Route path="/cancellation-refund" element={<CancellationRefundPolicyPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </div>

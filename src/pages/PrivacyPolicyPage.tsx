@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Shield, Lock, Eye, Database, UserCheck } from 'lucide-react';
+import { ArrowLeft, Shield, Lock, Eye, Database, UserCheck, AlertTriangle } from 'lucide-react';
 
 const PrivacyPolicyPage = () => {
   return (
@@ -14,7 +14,7 @@ const PrivacyPolicyPage = () => {
                 <div className="relative bg-gradient-to-r from-cyan-500 to-blue-600 p-2 rounded-lg">
                   <Shield className="h-6 w-6 text-white" />
                 </div>
-                <span className="text-2xl font-bold text-slate-900">NxTicker</span>
+                <span className="text-2xl font-bold text-slate-900">NXTicker</span>
               </Link>
             </div>
             <Link
@@ -40,12 +40,12 @@ const PrivacyPolicyPage = () => {
             </div>
             <h1 className="text-4xl font-bold text-slate-900 mb-4">Privacy Policy</h1>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Your privacy is important to us. This Privacy Policy explains how NxTicker collects, uses, and protects your information.
+              This Privacy Policy explains how NXTicker collects, uses, and safeguards information resulting from your use of our Service.
             </p>
             <div className="mt-6 flex items-center justify-center space-x-6 text-sm text-slate-500">
               <div className="flex items-center space-x-2">
                 <Eye className="h-4 w-4" />
-                <span>Last updated: January 2025</span>
+                <span>Effective: 01-September-2025</span>
               </div>
               <div className="flex items-center space-x-2">
                 <UserCheck className="h-4 w-4" />
@@ -57,169 +57,193 @@ const PrivacyPolicyPage = () => {
           {/* Privacy Policy Content */}
           <div className="prose prose-slate max-w-none">
             <div className="space-y-8">
-              {/* Introduction */}
+              {/* Section 1: Introduction */}
               <section>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">1. Introduction</h2>
                 <p className="text-slate-700 leading-relaxed">
-                  This Privacy Policy describes how Conglorean Datalabs and Media Private Limited ("NxTicker", "we", "us", or "our") collects, uses, and protects your information when you use our financial data API platform and related services (collectively, the "Service").
+                  Welcome to Conglorean Datalabs and Media Private Limited ("NXTicker", "we", "our", or "us").
                 </p>
                 <p className="text-slate-700 leading-relaxed mt-4">
-                  By using our Service, you agree to the collection and use of information in accordance with this Privacy Policy.
+                  NXTicker operates https://www.nxticker.com and related API services (the "Service").
+                </p>
+                <p className="text-slate-700 leading-relaxed mt-4">
+                  This Privacy Policy explains how we collect, use, and safeguard information resulting from your use of our Service. By using our Service, you agree to the collection and use of information in accordance with this Privacy Policy.
+                </p>
+                <p className="text-slate-700 leading-relaxed mt-4">
+                  Our Terms of Service ("Terms") govern all use of our Service, and together with this Privacy Policy, constitute your agreement with us.
                 </p>
               </section>
 
-              {/* Information We Collect */}
+              {/* Section 2: Definitions */}
               <section>
-                <h2 className="text-2xl font-bold text-slate-900 mb-4">Information We Collect</h2>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">2. Definitions</h2>
+                <ul className="list-disc list-inside space-y-2 text-slate-700 ml-4">
+                  <li><strong>Service:</strong> The NXTicker APIs, website, and related services.</li>
+                  <li><strong>Personal Data:</strong> Data that can identify a living individual (e.g., name, email, billing details).</li>
+                  <li><strong>Usage Data:</strong> Data automatically collected during use of our Service (e.g., IP address, API request logs, device/browser details).</li>
+                  <li><strong>Cookies:</strong> Small data files stored on your device to track preferences and improve Service.</li>
+                  <li><strong>Data Controller:</strong> NXTicker, determining the purposes and means of processing your data.</li>
+                  <li><strong>Data Processor / Service Providers:</strong> Third-party entities engaged by us to process data on our behalf.</li>
+                  <li><strong>User:</strong> The individual or company using our Service.</li>
+                </ul>
+              </section>
+
+              {/* Section 3: Information We Collect */}
+              <section>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">3. Information We Collect</h2>
+                <p className="text-slate-700 leading-relaxed mb-4">
+                  We may collect the following categories of data:
+                </p>
                 
                 <div className="space-y-6">
-                  <div>
-                    <h3 className="text-xl font-semibold text-slate-900 mb-3">Personal Information</h3>
-                    <ul className="list-disc list-inside space-y-2 text-slate-700 ml-4">
-                      <li>Name and email address when you create an account</li>
-                      <li>Billing information for subscription payments</li>
-                      <li>Company information for business accounts</li>
-                      <li>Communication preferences and support interactions</li>
+                  <div className="bg-slate-50 rounded-lg p-6">
+                    <h3 className="text-lg font-semibold text-slate-900 mb-3">Personal Data</h3>
+                    <ul className="list-disc list-inside space-y-2 text-slate-700">
+                      <li>Name and email address</li>
+                      <li>Company name and billing details</li>
+                      <li>API account credentials</li>
+                      <li>Payment-related details (handled securely via third-party processors)</li>
                     </ul>
                   </div>
 
-                  <div>
-                    <h3 className="text-xl font-semibold text-slate-900 mb-3">Usage Information</h3>
-                    <ul className="list-disc list-inside space-y-2 text-slate-700 ml-4">
-                      <li>API usage patterns and request logs</li>
-                      <li>IP addresses and device information</li>
-                      <li>Browser type and operating system</li>
-                      <li>Pages visited and time spent on our platform</li>
+                  <div className="bg-blue-50 rounded-lg p-6">
+                    <h3 className="text-lg font-semibold text-slate-900 mb-3">Usage Data</h3>
+                    <ul className="list-disc list-inside space-y-2 text-slate-700">
+                      <li>API usage logs (e.g., request counts, endpoints accessed)</li>
+                      <li>IP address, browser type, device type</li>
+                      <li>Access times and dates</li>
                     </ul>
                   </div>
 
-                  <div>
-                    <h3 className="text-xl font-semibold text-slate-900 mb-3">Technical Information</h3>
-                    <ul className="list-disc list-inside space-y-2 text-slate-700 ml-4">
-                      <li>API keys and authentication tokens</li>
-                      <li>Error logs and performance metrics</li>
-                      <li>Security and access logs</li>
-                    </ul>
+                  <div className="bg-green-50 rounded-lg p-6">
+                    <h3 className="text-lg font-semibold text-slate-900 mb-3">Tracking Data</h3>
+                    <p className="text-slate-700">
+                      We use cookies and similar technologies to track Service usage and improve functionality.
+                    </p>
                   </div>
                 </div>
               </section>
 
-              {/* How We Use Information */}
+              {/* Section 4: How We Use Your Data */}
               <section>
-                <h2 className="text-2xl font-bold text-slate-900 mb-4">How We Use Your Information</h2>
-                <ul className="list-disc list-inside space-y-2 text-slate-700 ml-4">
-                  <li>Provide and maintain our API services</li>
-                  <li>Process payments and manage subscriptions</li>
-                  <li>Monitor API usage and enforce rate limits</li>
-                  <li>Improve our services and develop new features</li>
-                  <li>Provide customer support and respond to inquiries</li>
-                  <li>Ensure security and prevent fraud</li>
-                  <li>Comply with legal obligations</li>
-                  <li>Send important service updates and notifications</li>
-                </ul>
-              </section>
-
-              {/* Data Sharing */}
-              <section>
-                <h2 className="text-2xl font-bold text-slate-900 mb-4">Data Sharing and Disclosure</h2>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">4. How We Use Your Data</h2>
                 <p className="text-slate-700 leading-relaxed mb-4">
-                  We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following circumstances:
+                  We use collected data for purposes including:
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-slate-700 ml-4">
-                  <li><strong>Service Providers:</strong> With trusted third-party vendors who assist in operating our platform</li>
-                  <li><strong>Legal Requirements:</strong> When required by law or to protect our rights and safety</li>
-                  <li><strong>Business Transfers:</strong> In connection with a merger, acquisition, or sale of assets</li>
-                  <li><strong>Consent:</strong> When you explicitly consent to sharing your information</li>
+                  <li>Providing and maintaining the Service</li>
+                  <li>Managing API access and subscriptions</li>
+                  <li>Customer support and communication</li>
+                  <li>Monitoring Service usage, security, and fraud prevention</li>
+                  <li>Billing and collection</li>
+                  <li>Sending service updates, technical notices, and marketing communications (opt-out available)</li>
+                  <li>Complying with legal obligations</li>
                 </ul>
               </section>
 
-              {/* Data Security */}
+              {/* Section 5: Data Retention */}
               <section>
-                <h2 className="text-2xl font-bold text-slate-900 mb-4">Data Security</h2>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">5. Data Retention</h2>
+                <ul className="list-disc list-inside space-y-2 text-slate-700 ml-4">
+                  <li>We retain Personal Data only as long as necessary for the purposes outlined in this Policy.</li>
+                  <li>API Usage Data may be retained longer for analytics, fraud prevention, or legal compliance.</li>
+                </ul>
+              </section>
+
+              {/* Section 6: Data Sharing & Disclosure */}
+              <section>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">6. Data Sharing & Disclosure</h2>
                 <p className="text-slate-700 leading-relaxed mb-4">
-                  We implement appropriate technical and organizational measures to protect your personal information:
+                  We may share Personal Data only in the following cases:
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-slate-700 ml-4">
-                  <li>Encryption of data in transit and at rest</li>
-                  <li>Regular security audits and vulnerability assessments</li>
-                  <li>Access controls and authentication mechanisms</li>
-                  <li>Secure data centers with physical security measures</li>
-                  <li>Employee training on data protection practices</li>
+                  <li>With trusted Service Providers (e.g., hosting, analytics, payment processors) under confidentiality obligations.</li>
+                  <li>To comply with legal obligations or law enforcement requests.</li>
+                  <li>In the event of a merger, acquisition, or sale of assets.</li>
+                  <li>To protect our rights, customers, or the public.</li>
+                  <li>With your consent.</li>
                 </ul>
-              </section>
-
-              {/* Your Rights */}
-              <section>
-                <h2 className="text-2xl font-bold text-slate-900 mb-4">Your Rights</h2>
-                <p className="text-slate-700 leading-relaxed mb-4">
-                  Depending on your location, you may have the following rights regarding your personal information:
+                <p className="text-slate-700 leading-relaxed mt-4 font-semibold">
+                  We do not sell your personal data.
                 </p>
-                <ul className="list-disc list-inside space-y-2 text-slate-700 ml-4">
-                  <li><strong>Access:</strong> Request a copy of your personal information</li>
-                  <li><strong>Rectification:</strong> Correct inaccurate or incomplete information</li>
-                  <li><strong>Erasure:</strong> Request deletion of your personal information</li>
-                  <li><strong>Portability:</strong> Receive your data in a structured, machine-readable format</li>
-                  <li><strong>Objection:</strong> Object to processing of your personal information</li>
-                  <li><strong>Restriction:</strong> Request limitation of processing activities</li>
-                </ul>
               </section>
 
-              {/* Data Retention */}
+              {/* Section 7: International Data Transfers */}
               <section>
-                <h2 className="text-2xl font-bold text-slate-900 mb-4">Data Retention</h2>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">7. International Data Transfers</h2>
                 <p className="text-slate-700 leading-relaxed">
-                  We retain your personal information only as long as necessary to provide our services and fulfill the purposes outlined in this Privacy Policy. API usage logs are typically retained for 12 months, while account information is retained for the duration of your subscription plus a reasonable period thereafter for legal and business purposes.
+                  If you access our Service from outside India, note that your data may be transferred and processed in jurisdictions with different data protection laws. We ensure reasonable safeguards for such transfers.
                 </p>
               </section>
 
-              {/* Cookies and Tracking */}
+              {/* Section 8: Security of Data */}
               <section>
-                <h2 className="text-2xl font-bold text-slate-900 mb-4">Cookies and Tracking Technologies</h2>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">8. Security of Data</h2>
+                <p className="text-slate-700 leading-relaxed">
+                  We use commercially reasonable safeguards to protect your Personal Data. However, no method of transmission or storage is 100% secure, and we cannot guarantee absolute security.
+                </p>
+              </section>
+
+              {/* Section 9: Your Data Rights */}
+              <section>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">9. Your Data Rights</h2>
                 <p className="text-slate-700 leading-relaxed mb-4">
-                  We use cookies and similar technologies to enhance your experience and analyze usage patterns:
+                  Depending on your jurisdiction, you may have rights including:
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-slate-700 ml-4">
-                  <li><strong>Essential Cookies:</strong> Required for basic platform functionality</li>
-                  <li><strong>Analytics Cookies:</strong> Help us understand how you use our platform</li>
-                  <li><strong>Preference Cookies:</strong> Remember your settings and preferences</li>
+                  <li>Access, rectification, or deletion of your Personal Data</li>
+                  <li>Restriction or objection to processing</li>
+                  <li>Data portability</li>
+                  <li>Withdrawal of consent (where applicable)</li>
                 </ul>
-              </section>
-
-              {/* International Transfers */}
-              <section>
-                <h2 className="text-2xl font-bold text-slate-900 mb-4">International Data Transfers</h2>
-                <p className="text-slate-700 leading-relaxed">
-                  Your information may be transferred to and processed in countries other than your own. We ensure appropriate safeguards are in place to protect your information in accordance with applicable data protection laws.
+                <p className="text-slate-700 leading-relaxed mt-4">
+                  Requests can be made by contacting us at support@nxticker.com.
                 </p>
               </section>
 
-              {/* Children's Privacy */}
+              {/* Section 10: Payments */}
               <section>
-                <h2 className="text-2xl font-bold text-slate-900 mb-4">Children's Privacy</h2>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">10. Payments</h2>
                 <p className="text-slate-700 leading-relaxed">
-                  Our Service is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you become aware that a child has provided us with personal information, please contact us immediately.
+                  We use third-party payment processors (e.g., PayPal, Razorpay, ApplePay, GPay, Stripe) for subscription billing. We do not store or process card details directly. Your data is governed by the privacy policies of these processors.
                 </p>
               </section>
 
-              {/* Changes to Privacy Policy */}
+              {/* Section 11: Third-Party Links */}
               <section>
-                <h2 className="text-2xl font-bold text-slate-900 mb-4">Changes to This Privacy Policy</h2>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">11. Third-Party Links</h2>
                 <p className="text-slate-700 leading-relaxed">
-                  We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date. You are advised to review this Privacy Policy periodically for any changes.
+                  Our Service may contain links to third-party websites. We are not responsible for their content or privacy practices.
                 </p>
               </section>
 
-              {/* Contact Information */}
+              {/* Section 12: Children's Privacy */}
               <section>
-                <h2 className="text-2xl font-bold text-slate-900 mb-4">Contact Us</h2>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">12. Children's Privacy</h2>
+                <p className="text-slate-700 leading-relaxed">
+                  Our Services are not directed to children under 18. We do not knowingly collect data from minors. If we learn we have collected data from a child, we will delete it promptly.
+                </p>
+              </section>
+
+              {/* Section 13: Changes to this Policy */}
+              <section>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">13. Changes to this Policy</h2>
+                <p className="text-slate-700 leading-relaxed">
+                  We may update this Privacy Policy periodically. Updates will be posted on this page with a revised "effective date". Significant changes may also be communicated via email.
+                </p>
+              </section>
+
+              {/* Section 14: Contact Us */}
+              <section>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">14. Contact Us</h2>
                 <p className="text-slate-700 leading-relaxed mb-4">
-                  If you have any questions about this Privacy Policy or our data practices, please contact us:
+                  For questions about this Privacy Policy or to exercise your data rights:
                 </p>
-                <div className="bg-slate-50 rounded-lg p-6">
+                <div className="bg-gradient-to-r from-slate-50 to-blue-50 rounded-lg p-6">
                   <div className="space-y-2 text-slate-700">
-                    <p><strong>Email:</strong> privacy@nxticker.com</p>
-                    <p><strong>Address:</strong> Conglorean Datalabs and Media Private Limited</p>
-                    <p>Bengaluru, Karnataka, India</p>
-                    <p><strong>Data Protection Officer:</strong> dpo@nxticker.com</p>
+                    <p className="font-semibold">Conglorean Datalabs and Media Private Limited</p>
+                    <p>Email: support@nxticker.com</p>
+                    <p>Website: https://www.nxticker.com</p>
                   </div>
                 </div>
               </section>

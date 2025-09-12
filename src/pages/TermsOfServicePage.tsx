@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, FileText, Shield, Scale, AlertTriangle } from 'lucide-react';
 
@@ -14,7 +13,7 @@ const TermsOfServicePage = () => {
                 <div className="relative bg-gradient-to-r from-cyan-500 to-blue-600 p-2 rounded-lg">
                   <FileText className="h-6 w-6 text-white" />
                 </div>
-                <span className="text-2xl font-bold text-slate-900">NxTicker</span>
+                <span className="text-2xl font-bold text-slate-900">NXTicker</span>
               </Link>
             </div>
             <Link
@@ -40,7 +39,7 @@ const TermsOfServicePage = () => {
             </div>
             <h1 className="text-4xl font-bold text-slate-900 mb-4">Terms of Service</h1>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              These Terms of Service govern the use of the NxTicker Platform operated by Conglorean Datalabs and Media Private Limited.
+              These Terms of Service govern the use of the NXTicker Platform operated by Conglorean Datalabs and Media Private Limited.
             </p>
             <div className="mt-6 flex items-center justify-center space-x-6 text-sm text-slate-500">
               <div className="flex items-center space-x-2">
@@ -60,10 +59,10 @@ const TermsOfServicePage = () => {
               {/* Introduction */}
               <section>
                 <p className="text-slate-700 leading-relaxed">
-                  These Terms of Service (the "Terms") govern the use of the NxTicker application programming interfaces and related services (the "NxTicker Platform") operated by Conglorean Datalabs and Media Private Limited ("NxTicker", "we", or "us"). These Terms apply to any person or entity who accesses or uses the NxTicker Platform ("Client", "User", or "you"). By accessing or using the NxTicker Platform, you agree to be bound by these Terms.
+                  These Terms of Service (the "Terms") govern the use of the NXTicker application programming interfaces and related services (the "NXTicker Platform") operated by Conglorean Datalabs and Media Private Limited ("NXTicker", "we", or "us"). These Terms apply to any person or entity who accesses or uses the NXTicker Platform ("Client", "User", or "you"). By accessing or using the NXTicker Platform, you agree to be bound by these Terms.
                 </p>
                 <p className="text-slate-700 leading-relaxed mt-4">
-                  NxTicker and User shall individually be referred to as a "Party" and collectively as the "Parties."
+                  NXTicker and User shall individually be referred to as a "Party" and collectively as the "Parties."
                 </p>
               </section>
 
@@ -72,16 +71,16 @@ const TermsOfServicePage = () => {
                 <h2 className="text-2xl font-bold text-slate-900 mb-4">1. Definitions</h2>
                 <div className="space-y-4">
                   <div>
-                    <p className="font-semibold text-slate-900">a. NxTicker Platform:</p>
-                    <p className="text-slate-700 ml-4">The stock market data APIs, analytics, documentation, software, and related services owned and operated by NxTicker.</p>
+                    <p className="font-semibold text-slate-900">a. NXTicker Platform:</p>
+                    <p className="text-slate-700 ml-4">The stock market data APIs, analytics, documentation, software, and related services owned and operated by NXTicker.</p>
                   </div>
                   <div>
                     <p className="font-semibold text-slate-900">b. Content:</p>
-                    <p className="text-slate-700 ml-4">Any and all data, text, code, information, or materials accessed through the NxTicker Platform.</p>
+                    <p className="text-slate-700 ml-4">Any and all data, text, code, information, or materials accessed through the NXTicker Platform.</p>
                   </div>
                   <div>
                     <p className="font-semibold text-slate-900">c. Client Application:</p>
-                    <p className="text-slate-700 ml-4">Any software or product developed by the User that integrates or uses the NxTicker APIs.</p>
+                    <p className="text-slate-700 ml-4">Any software or product developed by the User that integrates or uses the NXTicker APIs.</p>
                   </div>
                 </div>
               </section>
@@ -90,7 +89,7 @@ const TermsOfServicePage = () => {
               <section>
                 <h2 className="text-2xl font-bold text-slate-900 mb-4">2. Grant of License</h2>
                 <p className="text-slate-700 leading-relaxed mb-4">
-                  NxTicker grants User a limited, non-exclusive, non-transferable, revocable license to access and use the APIs and Content, solely in accordance with these Terms.
+                  NXTicker grants User a limited, non-exclusive, non-transferable, revocable license to access and use the APIs and Content, solely in accordance with these Terms.
                 </p>
                 <div className="space-y-3">
                   <div>
@@ -110,7 +109,7 @@ const TermsOfServicePage = () => {
                 <p className="text-slate-700 leading-relaxed mb-4">You may not:</p>
                 <ul className="list-disc list-inside space-y-2 text-slate-700 ml-4">
                   <li>Reverse engineer, disassemble, or attempt to discover source code of the Platform.</li>
-                  <li>Redistribute or resell the Content "as is" without adding material value (e.g., raw redistribution of NxTicker feeds).</li>
+                  <li>Redistribute or resell the Content "as is" without adding material value (e.g., raw redistribution of NXTicker feeds).</li>
                   <li>Use the APIs for unlawful, misleading, or harmful activities, including investment advice without necessary regulatory approvals.</li>
                 </ul>
               </section>
@@ -118,17 +117,14 @@ const TermsOfServicePage = () => {
               {/* Section 4: Intellectual Property Rights */}
               <section>
                 <h2 className="text-2xl font-bold text-slate-900 mb-4">4. Intellectual Property Rights</h2>
-                <p className="text-slate-700 leading-relaxed mb-4 font-semibold">
-                  Copyright © Conglorean Datalabs and Media Private Limited, 2025. All rights reserved.
-                </p>
                 <div className="space-y-3">
                   <div>
-                    <p className="font-semibold text-slate-900">• By NxTicker:</p>
-                    <p className="text-slate-700 ml-4">All rights, title, and interest in the NxTicker Platform, including software, algorithms, and datasets, remain with NxTicker.</p>
+                    <p className="font-semibold text-slate-900">• By NXTicker:</p>
+                    <p className="text-slate-700 ml-4">All rights, title, and interest in the NXTicker Platform, including software, algorithms, and datasets, remain with NXTicker.</p>
                   </div>
                   <div>
                     <p className="font-semibold text-slate-900">• By User:</p>
-                    <p className="text-slate-700 ml-4">Users retain ownership of their own applications, customer data, and any proprietary content they create using NxTicker APIs.</p>
+                    <p className="text-slate-700 ml-4">Users retain ownership of their own applications, customer data, and any proprietary content they create using NXTicker APIs.</p>
                   </div>
                 </div>
               </section>
@@ -166,7 +162,7 @@ const TermsOfServicePage = () => {
               <section>
                 <h2 className="text-2xl font-bold text-slate-900 mb-4">8. Warranties & Disclaimers</h2>
                 <ul className="list-disc list-inside space-y-2 text-slate-700 ml-4">
-                  <li>NxTicker provides data on an "as is" and "as available" basis.</li>
+                  <li>NXTicker provides data on an "as is" and "as available" basis.</li>
                   <li>We do not guarantee uninterrupted, accurate, or error-free data feeds.</li>
                   <li>No warranties are given regarding fitness for a particular purpose, merchantability, or non-infringement.</li>
                 </ul>
@@ -176,7 +172,7 @@ const TermsOfServicePage = () => {
               <section>
                 <h2 className="text-2xl font-bold text-slate-900 mb-4">9. Indemnity</h2>
                 <p className="text-slate-700 leading-relaxed">
-                  User agrees to indemnify and hold harmless NxTicker, its affiliates, directors, employees, and agents against any claims, damages, or liabilities arising from misuse of the Platform, violation of laws, or infringement of third-party rights.
+                  User agrees to indemnify and hold harmless NXTicker, its affiliates, directors, employees, and agents against any claims, damages, or liabilities arising from misuse of the Platform, violation of laws, or infringement of third-party rights.
                 </p>
               </section>
 
@@ -184,7 +180,7 @@ const TermsOfServicePage = () => {
               <section>
                 <h2 className="text-2xl font-bold text-slate-900 mb-4">10. Limitation of Liability</h2>
                 <p className="text-slate-700 leading-relaxed">
-                  To the maximum extent permitted by law, NxTicker's total liability shall not exceed the subscription fees paid by User in the preceding 12 months. NxTicker is not liable for indirect, consequential, or punitive damages.
+                  To the maximum extent permitted by law, NXTicker's total liability shall not exceed the subscription fees paid by User in the preceding 12 months. NXTicker is not liable for indirect, consequential, or punitive damages.
                 </p>
               </section>
 
@@ -208,7 +204,7 @@ const TermsOfServicePage = () => {
               <section>
                 <h2 className="text-2xl font-bold text-slate-900 mb-4">13. Assignment</h2>
                 <p className="text-slate-700 leading-relaxed">
-                  User may not assign rights or obligations without prior written consent of NxTicker.
+                  User may not assign rights or obligations without prior written consent of NXTicker.
                 </p>
               </section>
 
@@ -220,12 +216,6 @@ const TermsOfServicePage = () => {
                 </p>
               </section>
 
-              {/* Copyright Notice */}
-              <section className="mt-12 pt-8 border-t border-slate-200">
-                <p className="text-center text-slate-600 font-semibold">
-                  Copyright © Conglorean Datalabs and Media Private Limited, 2025. All rights reserved.
-                </p>
-              </section>
             </div>
           </div>
 

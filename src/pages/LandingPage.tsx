@@ -427,10 +427,11 @@ const LandingPage: React.FC = () => {
             <p className="text-slate-400 text-sm">
               © 2025 NxTicker. All rights reserved.
             </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
+            <div className="flex flex-wrap gap-x-6 gap-y-2 mt-4 md:mt-0">
               <Link to="/privacy" className="text-slate-400 hover:text-cyan-400 text-sm transition-colors duration-200">Privacy Policy</Link>
-                <Link to="/terms" className="text-slate-400 hover:text-cyan-400 text-sm transition-colors duration-200">Terms of Service</Link>
+              <Link to="/terms" className="text-slate-400 hover:text-cyan-400 text-sm transition-colors duration-200">Terms of Service</Link>
               <Link to="/security" className="text-slate-400 hover:text-cyan-400 text-sm transition-colors duration-200">Security</Link>
+              <Link to="/cancellation-refund" className="text-slate-400 hover:text-cyan-400 text-sm transition-colors duration-200">Cancellation & Refund</Link>
             </div>
           </div>
         </div>
